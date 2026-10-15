@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>University Tracker</h1>
+
+    <h2>Ajouter un Module</h2>
+
+    <form id="moduleForm">
+        <label for="moduleName">Nom du module :</label>
+        <input type="text" id="moduleName" placeholder="Ex: DAAW">
+
+        <p>Types des séances :</p>
+
+        <input type="checkbox" id="cours">
+        <label for="cours">Cours</label>
+
+        <input type="checkbox" id="td">
+        <label for="td">TD</label>
+
+        <input type="checkbox" id="tp">
+        <label for="tp">TP</label>
+
+        <br><br>
+
+        <button type="button" id="addButton">
+            Ajouter Module
+        </button>
+    </form>
+    
+<h2>Dashboard - Statistiques</h2>
+
+<div class="dashboard">
+
+    <div class="stat-card">
+        <h3>Mes Modules</h3>
+        <p id="total-modules">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Total Absences</h3>
+        <p id="total-absences">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Limites Atteintes</h3>
+        <p id="total-limits">0</p>
+    </div>
+
+</div>
+
+
+    <h2>Mes Modules</h2>
+
+    <div id="module-list"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
